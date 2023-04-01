@@ -1,0 +1,844 @@
+/*
+Theme Name: Lluna
+Author: Seokye
+Version: 1.0
+Text Domain: lluna
+*/
+
+
+:root {
+    --color-light:#FAFAFA;
+    --color-yellow: #FFB901;
+    --color-orange: #F4682D;
+    --color-browon: #512620;
+    --color-chocolate: #190300;
+    --color-verde: #1A682D;
+}
+
+@font-face {
+    font-family: "Kavoon";
+    font-style: normal;
+    src: url(assets/fonts/Kavoon-Regular.woff2) format('woff');
+}
+@font-face {
+    font-family: "untalin";
+    font-style: normal;
+    src: url(assets/fonts/untalin.woff2) format('woff');
+}
+@font-face {
+    font-family: "IBMPlexSans-Bold";
+    src: url(assets/fonts/IBMPlexSans-Bold.woff2) format('woff');
+}
+@font-face {
+    font-family: "IBMPlexSans";
+    src: url(assets/fonts/IBMPlexSans-Regular.woff2) format('woff');
+}
+
+
+/*-- BASIC STYLE --*/
+
+body {
+    margin: 165px 0 0 0;
+    background-color: var(--color-browon);
+    font-family: "IBMPlexSans";
+}
+
+main {
+    margin: 0 auto;
+    padding: 0;       
+    flex: 1;
+}
+
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'IBMPlexSans-bold', 'Sans';
+}
+
+p{
+    font-family: "IBMPlexSans", 'Sans';
+    text-align: justify;
+}
+
+code{
+    display: none;
+}
+
+
+
+
+/*-- TOPBAR STYLE --*/
+
+.topbar h3{
+    padding-left: 2rem;
+}
+
+.topbar {
+    height: 190px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    background-color: var(--color-orange);
+    color: var(--color-browon);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.5) ;
+}
+
+.topbar_menu_cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:16px;
+}
+
+.topbar__logo {
+    width: 150px;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 90px;
+}
+
+.topbar nav .menu {
+    display:flex;
+    flex-wrap: wrap;
+    list-style:none;
+    margin-left: 0px;
+    width: 100px;
+    position: relative;
+    width: 120%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    gap:20px;
+    font-family: 'IBMPlexSans-bold';
+    font-size: 18px;
+    color:var(--color-browon)
+}
+
+.menu a:hover{
+    color:var(--color-yellow);
+    -webkit-transform: translateY(-0.125rem);
+	-ms-transform: translateY(-0.125rem);
+	transform: translateY(-0.125rem);
+}
+
+.widget_shopping_cart_content {
+    display:none;
+}
+
+/*-- Header-main-cover--*/
+.wp-image-847{
+    height: 400px;
+    min-width: 100%;
+}
+.wp-image-819{
+    margin-top:-80px;
+    margin-bottom: -90px;
+}
+.wp-container-1.wp-container-1{
+    margin-top:-200px;
+}
+/*-- Header-main-cover 
+
+
+.main-cover-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width:100%;
+    min-width: 320px;
+    object-fit: fill;
+}
+.main-frase{
+    width:100%;
+    height: auto;
+    border-radius: none;
+}
+.main-cover-ancha{
+    width:100%;
+    margin: 0 auto;
+    border-radius: none;
+}
+
+.btn-CTA{
+    align-items: center;
+    font-family: "IBMPlexSans-Bold";
+    Font-size:1.2rem;
+    border:6px solid var(--color-chocolate);
+    color:var(--color-browon);
+    background-color: var(--color-yellow);
+    max-width: 350px;
+    height: 90px;
+    border-radius: 90px;
+    margin: 0 auto;
+}
+
+con HTML--*/
+
+
+@media screen and (max-width: 782px) {
+   body{
+    margin-top:148px;
+    }
+    main{
+        
+        width: 100%;
+        height: auto;
+    }
+    .topbar{
+        height: 160px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .topbar nav .menu{
+        padding:12px;
+        margin:0;
+        line-height: 12px;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    .topbar .topbar_menu_cart {
+        display: block;
+    }
+    .topbar__logo {
+        width: 100px;
+    }
+
+    .topbar h3, p {
+        font-size: 16px;
+    }
+    .topbar h3 {
+        padding:auto;
+        margin: 0;
+    }
+    .img{
+        border-radius: 40px;
+    }
+    p{
+        font-size:16px;
+    }
+}
+
+/*-- main --*/
+
+main{
+    margin-left: 0;
+    margin-right: 0;
+   
+}
+
+
+main article h1{
+    display: none;
+}
+
+
+.contenido_home{
+    margin-top:-100px;
+    width: 800px;
+    margin:0 auto;
+    font-family: "IBMPlexSans";
+    Font-size:18px;
+    color:var(--color-orange);
+}
+
+
+
+
+/*-- Slide --*/
+
+
+.wp-block-nextend-smartslider3 {
+    margin-top:80px;
+    margin-bottom: 50px;
+    width: calc(100%-30px);
+    border: 0.5px solid var(--color-browon);
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+
+/*-- About --*/
+.wp-container-5.wp-container-5 {
+    margin-top:120px;
+}
+.is-layout-constrained .wp-block-group{
+   
+    width: 100vh;
+    object-fit: cover;
+}
+
+ .about{
+    font-family: "IBMPlexSans-bold";
+    Font-size:4rem;
+    color:var(--color-orange);
+}
+
+.p__about{
+
+    margin-bottom: 30px;
+    font-family: "IBMPlexSans";
+    Font-size:1.2rem;
+    color:var(--color-orange);
+    width: 80%;
+    
+}
+
+
+
+/*-- Footer --*/
+
+
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right:0px;
+    padding-bottom: 0px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    overflow: hidden;
+    background-color: var(--color-chocolate);
+    
+}
+
+.pre-footer{
+    display:flex;
+    justify-content: space-between;
+    gap:12px;
+    padding-left: 60px;
+    padding-right:60px;
+    padding-bottom: 60px;
+}
+
+#menu-menu-pie-de-pagina-izquierda {
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    color:var(--color-orange);
+    list-style: none;
+}
+
+.datos_lluna{
+    padding-left:30px;
+    font-family: "IBMPlexSans";
+    Font-size:0.8rem;
+    color:var(--color-orange);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#menu-menu-pie-de-pagina-derecha{
+    color:var(--color-orange);
+    list-style: none;
+}
+
+.footer__logo{
+   opacity: 80%;
+}
+
+.logo_box{
+    display:flex;
+    align-items: center;
+    width: 100px;
+    height: auto;;
+}
+
+.logo_box :hover {
+    filter: hue-rotate(10deg);
+    -webkit-transform: translateY(-0.125rem);
+	-ms-transform: translateY(-0.125rem);
+	transform: translateY(-0.125rem);
+}
+#menu-menu-pie-de-pagina-derecha :hover{
+    filter: hue-rotate(60deg);
+    -webkit-transform: translateY(-0.125rem);
+	-ms-transform: translateY(-0.125rem);
+	transform: translateY(-0.125rem); 
+}
+
+#menu-menu-pie-de-pagina-izquierda :hover{
+    filter: hue-rotate(60deg);
+    -webkit-transform: translateY(-0.125rem);
+	-ms-transform: translateY(-0.125rem);
+	transform: translateY(-0.125rem); 
+}
+
+.wc-block-components-product-image {
+    margin:auto;
+    align-items: center;
+    max-width: 1100px;
+    height: auto;
+    
+}
+
+.redes_sociales_box{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    background-color: var(--color-orange);
+    padding-bottom: 0px;
+    margin-bottom:0px ;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 0  10px rgb(0 0 0 / 1) ;
+}
+
+.instagram {
+    border-radius: none; 
+}
+
+.plataformas {
+    display:flex;
+    justify-content: flex-start;
+    gap:20px;
+    align-items: center;
+    padding-left: 30px;
+}
+.redes-sociales{
+    display:flex;
+    justify-content: flex-end;
+    gap:12px;
+    align-items: center;
+    padding-right: 30px;
+}
+.redes-sociales p {
+    color:var(--color-browon);
+    font-family: "IBMPlexSans-Bold";
+    Font-size:0.8rem;
+}
+
+
+
+
+/*-- Tienda --*/
+
+
+.woocommerce-products-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.page-description{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.page-description h4{
+    color:var(--color-orange);
+}
+
+.wc-block-grid__product-image img{
+    width: 400px;
+    height: 400px;
+    border-radius:80px;
+    object-fit: cover;
+}
+
+.wc-block-components a{
+    font-family: "IBMPlexSans";
+    Font-size:0.8rem;
+    color:var(--color-orange);
+}
+
+
+
+/*-- hamburguesa individual --*/
+
+.page-title{
+    font-family: "Kavoon";
+    font-size: 4rem;
+    color: var(--color-orange);
+}
+.woocommerce-breadcrumb{
+    display: none;
+}
+.woocommerce-ordering {
+    display: none;
+}
+#sidebar {
+    display: none;
+}
+.related h2 {
+    display: none;
+}
+
+.peganav{
+    display: none;
+}
+.columns-3 {
+    display: none;
+}
+
+.woocommerce-result-count {
+        display: none;
+}
+
+li.categories{
+    display: none;
+}
+
+.product_meta{
+    cursor: default;
+    pointer-events: none;        
+    text-decoration: none;
+}
+
+.product_meta .posted_in{
+    display: none;
+}
+
+#tab-title-additional_information {
+    display: none;
+}
+
+.wc-tabs-wrapper{
+    display: none;
+}
+
+.site-main{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.woocommerce ul.products li.product a img{
+    border: 2px solid var(--color-orange);
+}
+.summary {
+    font-family: "IBMPlexSans";
+    Font-size:0.8rem;
+    color:var(--color-orange);
+}
+
+span .amount{
+    display: none;
+}
+
+.related .products{
+    display: flex;
+    justify-content: center;
+}
+#bannerR{
+    font-size: 18px;
+}
+.variations{
+    text-align: justify;
+    margin-top:20px;
+}
+#pa_acompanamientos, #pa_bebida {
+    border-radius: 40px;
+    padding:12px;
+    height: 45px;
+    background-color: var(--color-yellow);
+    color:var(--color-browon);
+}
+.reset_variations{
+    color:var(--color-orange)
+}
+
+
+.tagged_as{
+    font-family: "IBMPlexSans-Bold";
+    font-size: 16px;
+    color:var(--color-orange);
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button{
+    font-family: "IBMPlexSans";
+    Font-size:0.8rem;
+    color:var(--color-browon);
+    background-color: var(--color-yellow);
+    border-radius: 50px;
+    width: 195.69px;
+    top:-10px;
+    text-align: center;
+}
+
+
+
+/*-- Mi cuenta --*/
+
+.woocommerce main{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1600px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+    font-family:"IBMPlexSans-bold"  ;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation{
+    float:none;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    width: 100%;
+    line-height: 40px;
+    padding: 0px;
+    color:var(--color-browon);
+    border-radius: 40px;
+    border-bottom: 0.5px solid var(--color-browon);
+    background-color: var(--color-orange);
+}
+.woocommerce-MyAccount-content{
+    margin-top:20px;
+    font-size: 18px;
+    padding:30px;
+    font-family: "IBMPlexSans" ;
+    color:var(--color-browon);
+    background-color: var(--color-yellow);
+    border-radius: 40px;
+}
+
+.woocommerce-MyAccount-navigation ul{
+    gap: 35px;
+    list-style: none;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.woocommerce-MyAccount-navigation li :hover{
+    color: var(--color-verde);
+    -webkit-transform: translateY(-0.125rem);
+	-ms-transform: translateY(-0.125rem);
+	transform: translateY(-0.125rem); 
+}
+
+.woocommerce-info{
+    font-size: 18px;
+    padding:8px;
+    align-items: center;
+    font-family: "IBMPlexSans" ;
+    color:var(--color-browon);
+    background:transparent;
+}
+.woocommerce-info button{
+    align-items: center;
+}
+.woocommerce-info {
+    border-top-color: transparent;
+}
+.woocommerce-info::before{
+    display: none;
+}
+
+.woocommerce form .input-text{
+    border:1px solid var(--color-browon);
+    color:var(--color-orange);
+    padding:20px;
+    border-radius: 40px;
+    border:0px;
+    
+}
+.woocommerce form.login {
+    margin:0 auto;
+    max-width: 600px;
+    min-width: 300px;
+    font-size: 18px;
+    padding:30px;
+    font-family: "IBMPlexSans" ;
+    color:var(--color-browon);
+    background-color: var(--color-orange);
+    border-radius: 40px;
+    border:0px;
+}
+
+.woocommerce main h2 {
+    font-size: 2rem;
+    font-family: "IBMPlexSans-Bold" ;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.woocommerce main{
+    margin:0 auto;
+    color:var(--color-orange);
+}
+
+.input:-internal-autofill-selected{
+    color:var(--color-browon)
+}
+
+.edit-account p{
+    font-size: 16px;
+    align-items: center;
+    font-family: "IBMPlexSans" ;
+    color:var(--color-browon);
+}
+
+fieldset{
+    padding:30px;
+    margin-top: 40px;
+    border-color: var(--color-browon);
+    border-radius: 50px;
+    background-color: var(--color-yellow);
+}
+
+.woocommerce button.button{
+    border-radius: 50px;
+    padding:20px;
+    color:var(--color-browon);
+    background-color: var(--color-orange);
+    display: block;
+}
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    display:none;
+}
+.woocommerce-account .addresses .title .edit{
+    display: none;
+}
+.woocommerce button.button{
+    font-size: 20px;
+    font-family:"IBMPlexSans-bold";
+}
+.woocommerce-page .col2-set .col-2{
+    border-radius: 40px;
+    font-size: 20px;
+    display: inline;
+    align-content: center;
+    float:none;
+}
+.woocommerce-page .col2-set .col-2 h3{
+    font-size: 20px;
+    background-color: var(--color-orange);
+    padding: 16px;
+    border-radius: 40px;
+}
+address{
+    display: none;
+}
+.woocommerce .col2-set, .woocommerce-page .col2-set {
+    float:none;
+}
+.woocommerce-MyAccount-content> p{
+    display:none;
+}
+em{
+    font-size: 14px;
+}
+@media screen and (max-width: 782px) {
+    .woocommerce main{
+
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
+    font-family:"IBMPlexSans-bold";
+    }
+    .edit-account{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+/*-- Contáctenos --*/
+
+
+.wp-block-spacer{
+    display: none;
+}
+
+.woocommerce main form{
+    font-size: 18px;
+    margin: auto 0;
+    max-width: 1000px;
+}
+.woocommerce main form label{
+    font-size: 18px;
+}
+
+textarea, input[type="text" i], input[type="email" i] {
+    padding:20px;
+    border-radius: 50px;
+    border:none;
+    width: 900px;
+    min-width: 270px;
+    margin-top:12px;
+    
+}
+
+input[type="submit" i]{
+    font-size: 18px;
+    font-family:"IBMPlexSans-bold";
+    background-color: var(--color-orange);
+    color:var(--color-browon);
+    padding: 16px;
+    border-radius: 40px;
+}
+
+
+
+/*-- Crrito --*/
+
+.customize-support main .woocommerce{
+    background-color: var(--color-yellow);
+    padding:35px;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+.woocommerce-cart-form{
+    font-family: "IBMPlexSans";
+    Font-size:0.8rem;
+    color:var(--color-browon);
+    border-radius: 90px;
+}
+.input-text{
+    height: 60px;
+}
+.cart_totals {
+    font-family: "IBMPlexSans";
+    color:var(--color-browon);
+}
+.woocommerce-cart-form__contents{
+    padding-left:30px;
+    background-color: var(--color-yellow);
+}
+.woocommerce-cart-form button{
+    font-family: "IBMPlexSans";
+    Font-size:0.8rem;
+    color:var(--color-orange);
+}
+
+
