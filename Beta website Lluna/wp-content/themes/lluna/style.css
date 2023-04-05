@@ -35,7 +35,7 @@ Text Domain: lluna
 }
 
 
-/*-- BASIC STYLE --*/
+/*-- BASIC GLOBAL--*/
 
 body {
     margin: 165px 0 0 0;
@@ -78,7 +78,7 @@ code{
 
 
 
-/*-- TOPBAR STYLE --*/
+/*-- TOPBAR GLOBAL--*/
 
 .topbar h3{
     padding-left: 2rem;
@@ -151,7 +151,7 @@ img {
 
 
 
-        /*-- Header-main-cover-html 
+        /*-- HOME_Header-main-cover-html 
 
 
         .main-cover-container {
@@ -192,7 +192,7 @@ img {
 
 
 
-/*-- HEADER MAIN_COVER con WP--*/
+/*-- HOME_HEADER MAIN COVER con WP--*/
 
 
 .wp-image-847{
@@ -256,7 +256,7 @@ img {
     
 }
 
-/*-- main --*/
+/*--HOME_ MAIN --*/
 
 main{
     margin-left: 0;
@@ -281,7 +281,7 @@ main article h1{
 
 
 
-/*-- Slide --*/
+/*-- HOME_SLIDE --*/
 
 
 .wp-block-nextend-smartslider3 {
@@ -302,7 +302,7 @@ main article h1{
 }
 
 
-/*-- About --*/
+/*-- HOME_ABOUT --*/
 
 .wp-container-5.wp-container-5 {
     margin-top:120px;
@@ -331,7 +331,7 @@ main article h1{
 
 
 
-/*-- Tienda --*/
+/*-- PAGE TIENDA --*/
 
 
 .woocommerce-products-header{
@@ -367,7 +367,7 @@ main article h1{
 
 
 
-        /*-- hamburguesa individual --*/
+        /*-- PAGE hamburguesa individual --*/
 
         .page-title{
             font-family: "IBMPlexSans-Bold";
@@ -492,7 +492,7 @@ main article h1{
             padding-left: 30px;
         }
 
-                /*-- MI CUENTA  --*/
+                /*-- PAGE MI CUENTA  --*/
 
                 .woocommerce main{
                     margin: auto;
@@ -676,7 +676,7 @@ main article h1{
 
 
 
-/*-- CONTACTO --*/
+/*-- PAGE CONTACTO --*/
 
 
 .wp-block-spacer{
@@ -714,7 +714,7 @@ input[type="submit" i]{
 
 
 
-/*-- CRRITO --*/
+/*-- PAGE CRRITO --*/
 
 .customize-support main .woocommerce{
     background-color: var(--color-yellow);
@@ -761,7 +761,7 @@ input[type="submit" i]{
 
 
 
-/*-- Footer --*/
+/*-- FOOTER GLOBAL --*/
 
 
 
