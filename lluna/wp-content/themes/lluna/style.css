@@ -238,7 +238,7 @@ img {
 }
 
 
-@media screen and (min-widht: 320px) and(max-width: 500px) {
+@media screen and (min-widht: 320px) and (max-width: 500px) {
     body{
     margin-top: 120px;
     }
@@ -285,7 +285,12 @@ img {
         font-size:16px;
     }
 
+    
+.footer{
+    flex-wrap: wrap;
 }
+}
+
 
 /*--HOME_ MAIN --*/
 
@@ -317,7 +322,7 @@ main article h1{
 
 .wp-block-nextend-smartslider3 {
     margin-top:80px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     width: calc(100%-30px);
 }
 
@@ -328,9 +333,7 @@ main article h1{
     margin:0 auto;
     box-shadow: 0 10px 10px rgb(0 0 0 / 0.5) ;
 }
-.wp-container-5.wp-container-5 {
-    margin-top:-90px;
-}
+
 .wp-block-button.is-style-outline>.wp-block-button__link {
     margin-bottom: 80px;
 }
@@ -338,7 +341,9 @@ main article h1{
     width: auto;
 }
 
-
+.wp-container-5.wp-container-5 {
+    margin-top: 15px;
+}
 
 
 
@@ -349,9 +354,6 @@ main article h1{
     box-shadow: 0 10px 10px rgb(0 0 0 / 0.5) ;
 }
 
-.wp-container-5.wp-container-5 {
-    margin-top:120px;
-}
 
 .is-layout-constrained .wp-block-group{
     width: 100vh;
@@ -515,7 +517,6 @@ main article h1{
             font-family: "IBMPlexSans";
             Font-size:0.8rem;
             color:var(--color-browon);
-            background-color: var(--color-yellow);
             border-radius: 50px;
             width: 195.69px;
             top:-10px;
@@ -714,22 +715,7 @@ main article h1{
                 em{
                     font-size: 14px;
                 }
-                @media screen and (max-width: 782px) {
-                    .woocommerce main{
-
-                    padding-left: 12px;
-                    padding-right: 12px;
-                    font-size: 18px;
-                    font-family:"IBMPlexSans-bold";
-                    }
-                    .edit-account{
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-                }
-
-               
+        
 
 
 
@@ -775,7 +761,6 @@ input[type="submit" i]{
 /*-- PAGE CRRITO --*/
 
 .customize-support main .woocommerce{
-    background-color: var(--color-yellow);
     padding:35px;
     border-radius: 90px;
     overflow: hidden;
@@ -784,7 +769,7 @@ input[type="submit" i]{
 .woocommerce-cart-form{
     font-family: "IBMPlexSans";
     Font-size:0.8rem;
-    color:var(--color-browon);
+    color:var(--color-orange);
     border-radius: 90px;
 }
 .input-text{
@@ -834,7 +819,6 @@ footer{
     border-top-right-radius: 90px;
     overflow: hidden;
     background-color: var(--color-chocolate);
-    
 }
 
 .pre-footer{
@@ -871,7 +855,7 @@ h3 {
 }
 
 .footer__logo{
-   opacity: 80%;
+   opacity: 100%;
 }
 
 .logo_box{
